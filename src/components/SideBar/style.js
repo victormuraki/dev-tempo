@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Container = styled.div`
     h3 {
-        margin-top: 3rem;
+        margin-top: 6rem;
     }
 
     *{
@@ -41,7 +41,7 @@ export const Input = styled.div `
 `
 
 export const CityCard = styled.div`
-    margin: 1.5rem 0 1rem 0;
+    margin: 1.5rem 0 1.5rem 0;
     
     p{
         color: #97a5ad;
@@ -50,4 +50,16 @@ export const CityCard = styled.div`
 
 export const ForecastDetail = styled.div`
     margin-top: 2rem;
+
+    p{
+        margin: 1.5rem 0 1.5rem 0;
+
+    }
+`
+
+export const ForeCastNextDays = styled.div`
+
+    p{
+        margin: 1.5rem 0 1.5rem 0;
+    }
 `

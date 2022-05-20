@@ -1,4 +1,4 @@
-import { Container, Input, CityCard, ForecastDetail } from "./style"
+import { Container, Input, CityCard, ForecastDetail, ForeCastNextDays } from "./style"
 
 export function SideBar() {
     return (
@@ -25,11 +25,11 @@ export function SideBar() {
                 <p>Vento: </p>
                 <p>Raio UV: </p>
             </ForecastDetail>
-            <>
+            <ForeCastNextDays>
                 <h3>Próximos dias</h3>
                 <p>Segunda</p>
                 <p>Terça</p>
-            </>
+            </ForeCastNextDays>
         </Container>
     )
 }
