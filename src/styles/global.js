@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import img from "../assets/por-do-sol-background.jpg";
 
 export const GlobalStyle = createGlobalStyle`
     :root {
@@ -9,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
         --text-body: #969CB3;
 
         --background: #F0F2F5;
+        --background-blur: rgba(12,44,57,0.5); 
         --shape: #FFFFFF;
     }
 
@@ -29,8 +31,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: var(--background);
-        -webkit-font-smoothing: antialiased;
+        height: 100vh;
+        background-image: url(${img});
     }
 
     body, input, textarea, button {
