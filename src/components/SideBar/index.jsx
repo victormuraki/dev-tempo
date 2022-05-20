@@ -1,26 +1,32 @@
-import { Container } from "./style"
+import { Container, Input, CityCard, ForecastDetail } from "./style"
 
 export function SideBar() {
     return (
         <Container>
-            <>
-                <input type="text" />
+            <Input>
+                <input type="text" placeholder="Procure outra cidade"/>
                 <button>Buscar</button>
-            </>
-            <>
+            </Input>
+            <CityCard>
                 <p>São Paulo</p>
+            </CityCard>
+            <CityCard>
                 <p>Rio de Janeiro</p>
+            </CityCard>
+            <CityCard>
                 <p>Santa Catarina</p>
+            </CityCard>
+            <CityCard>
                 <p>Bahia</p>
-            </>
+            </CityCard>
+            <ForecastDetail>
+                <h3>Detalhes sobre a previsão</h3>
+                <p>Umidade: </p>
+                <p>Vento: </p>
+                <p>Raio UV: </p>
+            </ForecastDetail>
             <>
-                <h4>Detalhes sobre a previsão</h4>
-                <p>Umidade</p>
-                <p>Vento</p>
-                <p>Raio UV</p>
-            </>
-            <>
-                <h4>Próximos dias</h4>
+                <h3>Próximos dias</h3>
                 <p>Segunda</p>
                 <p>Terça</p>
             </>
