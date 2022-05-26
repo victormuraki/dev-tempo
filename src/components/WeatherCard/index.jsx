@@ -1,30 +1,31 @@
-import { useEffect, useState } from "react"
-import { Container, IconAndPrev, LocalAndDate } from "./style"
+import { useContext, useEffect, useState } from "react"
+import { Container, Content, IconAndPrev, LocalAndDate } from "./style"
 import { api } from "../services/api"
+
+import sun from "../../assets/sun-icon.png"
+import { Context } from "../Context/Context";
 
 export function WeatherCard() {
 
-    useEffect(() => {
-        api.get(`&city_name=carapicuiba`)
-        .then(response => {
-            console.log(response)
-        })
-    }, [])
+    const { city, setCity, temperature, setTemperature, typeWeather, setTypeWeather } = useContext(Context);
 
-    // const [city, setCity] = useState([])
-    // const [temperature, setTemperature] = useState([])
+    const date = new Date();
+    const options = { weekday: 'short', year: '2-digit', month: 'long', day: 'numeric' }
+    const dataFormatada = date.toLocaleDateString('pt-BR', options);
 
     return (
         <Container>
-            <h1>16°</h1>
-            <LocalAndDate>
-                <h2></h2>
-                <p>06:09 - Segunda, 20 Mai 22</p>
-            </LocalAndDate>
-            <IconAndPrev>
-                <img src="" alt="" />
-                <p>Nublado</p>
-            </IconAndPrev>
+            <Content>
+                <span>{temperature}°</span>
+                <LocalAndDate>
+                    <h2>{city}</h2>
+                    <p>{dataFormatada}</p>
+                </LocalAndDate>
+                <IconAndPrev>
+                    <img src={sun} alt="" />
+                    <p>{typeWeather}</p>
+                </IconAndPrev>
+            </Content>
         </Container>
     )
 }

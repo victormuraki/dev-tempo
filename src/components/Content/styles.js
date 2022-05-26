@@ -5,6 +5,4 @@ export const Container =  styled.div`
     flex-direction: row;
     justify-content: space-between;
     height: 100vh;
-    background-image: url('../../assets/por-do-sol-background.jpg')
-    
 `
