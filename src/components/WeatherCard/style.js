@@ -39,7 +39,7 @@ export const IconAndPrev = styled.div`
     align-items: center;
 
     img{
-        height: 2rem;
-        width: 2rem;
+        height: 3rem;
+        width: 3rem;
     }
 `

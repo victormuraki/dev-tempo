@@ -1,12 +1,11 @@
 import { useContext } from "react";
 import { Container, Content, IconAndPrev, LocalAndDate } from "./style";
 
-import sun from "../../assets/sun-icon.png";
 import { Context } from "../Context/Context";
 
 export function WeatherCard() {
 
-    const { city, setCity, temperature, setTemperature, typeWeather, setTypeWeather } = useContext(Context);
+    const { city, temperature, typeWeather, iconWeather } = useContext(Context);
 
     const date = new Date();
     const options = { weekday: 'short', year: '2-digit', month: 'long', day: 'numeric' }
@@ -21,7 +20,7 @@ export function WeatherCard() {
                     <p>{dataFormatada}</p>
                 </LocalAndDate>
                 <IconAndPrev>
-                    <img src={sun} alt="" />
+                    <img src={`http://openweathermap.org/img/wn/${iconWeather}.png`} alt="" />
                     <p>{typeWeather}</p>
                 </IconAndPrev>
             </Content>

@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import img from "../assets/por-do-sol-background.jpg";
 
 export const GlobalStyle = createGlobalStyle`
     :root {
@@ -32,7 +31,6 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         height: 100vh;
-        background-image: url(${img});
     }
 
     body, input, textarea, button {
