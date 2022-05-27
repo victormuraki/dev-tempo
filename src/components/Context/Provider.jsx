@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { api } from "../services/api";
-import { Context } from "./Context"
+import { Context } from "./Context";
 
 export const Provider = ({ children }) => {
 
@@ -19,9 +19,7 @@ export const Provider = ({ children }) => {
                 setHumidity(response.data.main.humidity);
                 setWind(response.data.wind.speed);
             })
-    }, [city])
-
-
+    }, [city]);
 
     return (
         <Context.Provider value={{

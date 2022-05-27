@@ -1,11 +1,11 @@
-import { useContext, useEffect, useState } from "react"
-import { Container, Input, CityCard, ForecastDetail, ForeCastNextDays } from "./style"
+import { useContext, useState } from "react";
+import { Container, Input, CityCard, ForecastDetail} from "./style";
 
 import { Context } from "../Context/Context";
 
 export function SideBar() {
 
-    const { humidity, wind, setCity } = useContext(Context)
+    const { humidity, wind, setCity } = useContext(Context);
     const [search, setSearch] = useState('');
 
     function handleSaoPaulo() {

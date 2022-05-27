@@ -1,8 +1,7 @@
-import { useContext, useEffect, useState } from "react"
-import { Container, Content, IconAndPrev, LocalAndDate } from "./style"
-import { api } from "../services/api"
+import { useContext } from "react";
+import { Container, Content, IconAndPrev, LocalAndDate } from "./style";
 
-import sun from "../../assets/sun-icon.png"
+import sun from "../../assets/sun-icon.png";
 import { Context } from "../Context/Context";
 
 export function WeatherCard() {
