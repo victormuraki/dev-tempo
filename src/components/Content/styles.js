@@ -24,7 +24,6 @@ export const ContentBg = styled.div`
         background-size: cover;
         background-repeat: no-repeat;
         background-blend-mode: darken;
-
     }
     .rain {
         background: rgba(0, 0, 0, 0.3) url(${rain});

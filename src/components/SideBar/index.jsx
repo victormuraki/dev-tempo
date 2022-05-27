@@ -1,7 +1,9 @@
 import { useContext, useState } from "react";
-import { Container, Input, CityCard, ForecastDetail} from "./style";
+import { Container, Input, CityCard, ForecastDetail, SideBarFooter, SvgIconsFooter } from "./style";
 
 import { Context } from "../Context/Context";
+import github from "../../assets/github.svg";
+import linkedin from "../../assets/linkedin.svg";
 
 export function SideBar() {
 
@@ -60,6 +62,13 @@ export function SideBar() {
                 <p>Umidade: {humidity}</p>
                 <p>Vento: {(wind * 4.32).toFixed(1)} km/h</p>
             </ForecastDetail>
+            <SideBarFooter>
+                <p>Developer Victor Muraki</p>
+                <SvgIconsFooter>
+                    <a href="https://github.com/victormuraki/dev-tempo" target="_blank"><img src={github} alt="Link Github Victor Muraki" /></a>
+                    <a href="https://www.linkedin.com/in/victormuraki/" target="_blank"><img src={linkedin} alt="Link Linkedin Victor Muraki" /></a>
+                </SvgIconsFooter>
+            </SideBarFooter>
         </Container>
     )
 }

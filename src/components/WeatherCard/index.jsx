@@ -11,6 +11,16 @@ export function WeatherCard() {
     const options = { weekday: 'short', year: '2-digit', month: 'long', day: 'numeric' }
     const dataFormatada = date.toLocaleDateString('pt-BR', options);
 
+    function weatherNameType() {
+        if (typeWeather === 'Clear') return 'Céu limpo';
+        if (typeWeather === 'Thunderstorm') return 'Tempestade';
+        if (typeWeather === 'Drizzle') return 'Neblina';
+        if (typeWeather === 'Rain') return 'Chuva';
+        if (typeWeather === 'Snow') return 'Nevando';
+        if (typeWeather === 'Atmosphere') return 'Neblina';
+        if (typeWeather === 'Clouds') return 'Nublado   ';
+    }
+
     return (
         <Container>
             <Content>
@@ -21,7 +31,7 @@ export function WeatherCard() {
                 </LocalAndDate>
                 <IconAndPrev>
                     <img src={`http://openweathermap.org/img/wn/${iconWeather}.png`} alt="" />
-                    <p>{typeWeather}</p>
+                    <p>{weatherNameType()}</p>
                 </IconAndPrev>
             </Content>
         </Container>

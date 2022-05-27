@@ -76,3 +76,31 @@ export const ForecastDetail = styled.div`
 
     }
 `
+export const SideBarFooter = styled.footer`
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    img {
+        height: 2rem;
+        max-height: 100%;
+        margin: 0 0.5rem;
+        margin-top: 0.8rem;
+        filter: invert(1);
+    }
+`
+
+export const SvgIconsFooter = styled.div`
+    display: flex;
+    flex-direction: row;
+
+`

@@ -41,5 +41,6 @@ export const IconAndPrev = styled.div`
     img{
         height: 3rem;
         width: 3rem;
+        filter: brightness(200%);
     }
 `
