@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
     *{
@@ -11,7 +11,7 @@ export const Container = styled.div`
     margin-left: 5rem;
     margin-right: 60%;
 
-`
+`;
 
 export const Content = styled.div`
     span {
@@ -23,14 +23,14 @@ export const Content = styled.div`
     flex-direction: row;
     align-items: center;
 
-`
+`;
 
 export const LocalAndDate = styled.div`
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
     font-size: 1rem;
-`
+`;
 
 export const IconAndPrev = styled.div`
     margin-left: 1rem;
@@ -43,4 +43,4 @@ export const IconAndPrev = styled.div`
         width: 3rem;
         filter: brightness(200%);
     }
-`
+`;

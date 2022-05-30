@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const Container = styled.div`
     h3 {
@@ -20,9 +20,9 @@ export const Container = styled.div`
     max-width: 30%;
     padding: 4rem;
 
-`
+`;
 
-export const Input = styled.div `
+export const Input = styled.div`
     height: 3rem;
     width: 100%;
     font-size: 1rem;
@@ -48,7 +48,7 @@ export const Input = styled.div `
         color: #ffa500;
         transition: 0.5s;
     }
-`
+`;
 
 export const CityCard = styled.button`
     margin: 1.5rem 0 1.5rem 0;
@@ -66,7 +66,7 @@ export const CityCard = styled.button`
     }
     }
 
-`
+`;
 
 export const ForecastDetail = styled.div`
     font-size: 2rem;
@@ -75,7 +75,7 @@ export const ForecastDetail = styled.div`
         margin: 1.5rem 0 1.5rem 0;
 
     }
-`
+`;
 export const SideBarFooter = styled.footer`
     position: absolute;
     bottom: 2rem;
@@ -97,10 +97,10 @@ export const SideBarFooter = styled.footer`
         margin-top: 0.8rem;
         filter: invert(1);
     }
-`
+`;
 
 export const SvgIconsFooter = styled.div`
     display: flex;
     flex-direction: row;
 
-`
+`;

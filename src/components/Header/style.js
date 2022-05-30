@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.header`
 
@@ -9,4 +9,6 @@ export const Container = styled.header`
         margin: 1.5rem 0 0 5rem;
         color: var(--white);
     }
-`
+`;
+
+export default Container;

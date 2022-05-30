@@ -1,12 +1,9 @@
-import styled from "styled-components";
-import clear from "../../assets/ceu-limpo.jpg";
-import rain from "../../assets/chuva.jpg";
-import thunderstorm from "../../assets/tempestade.jpg";
-import drizzle from "../../assets/garoa.jpg";
-import clouds from "../../assets/nublado-2.jpg";
-import mist from "../../assets/chuva.jpg";
-
-
+import styled from 'styled-components';
+import clear from '../../assets/ceu-limpo.jpg';
+import rain from '../../assets/chuva.jpg';
+import thunderstorm from '../../assets/tempestade.jpg';
+import drizzle from '../../assets/garoa.jpg';
+import clouds from '../../assets/nublado-2.jpg';
 
 export const Container = styled.div`
 
@@ -15,7 +12,7 @@ export const Container = styled.div`
     justify-content: space-between;
     height: 100vh;
 
-    `
+    `;
 
 export const ContentBg = styled.div`
 
@@ -52,11 +49,11 @@ export const ContentBg = styled.div`
         background-blend-mode: darken;
     }
     .mist {
-        background: rgba(0, 0, 0, 0.5) url(${mist});
+        background: rgba(0, 0, 0, 0.5) url(${rain});
         background-size: cover;
         background-repeat: no-repeat;
         background-blend-mode: darken;
     }
     
 
-`
+`;
